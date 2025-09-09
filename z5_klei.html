@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Zadanie 5</title>
+    <style>
+        p{
+            color: red;
+            font-size: 2cm;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function WinOpen_grafika1(){
+            window.open("grafika1.html","okienko_grafika1","toolbar=no,directories=no,menubar=no,height=455,width=190,top=910,left=250");
+        }
+        function WinOpen_grafika2(){
+            window.open("grafika2.html","okienko_grafika2","toolbar=no,directories=no,menubar=no,height=455,width=190,top=610,left=480");
+        }
+        function WinOpen_grafika3(){    
+            window.open("grafika3.html","okienko_grafika3","toolbar=no,directories=no,menubar=no,height=455,width=190,top=310,left=700");
+        }
+        function WinOpen_grafika4(){
+            window.open("grafika4.html","okienko_grafika4","toolbar=no,directories=no,menubar=no,height=455,width=190,top=10,left=920");
+        }
+        function okno_zamknij_klein(){
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <p>Wykonał: Filip Klein mój numer w dzienniku to 11, <br>czyli mam układ 3 [(11) mod 4 = 3]</p>
+    <form>
+        <input type="button" name="grafika1" value="grafika1-klein" onclick="WinOpen_grafika1(' ')">
+        <input type="button" name="grafika2" value="grafika2-klein" onclick="WinOpen_grafika2(' ')">
+        <input type="button" name="grafika3" value="grafika3-klein" onclick="WinOpen_grafika3(' ')">
+        <input type="button" name="grafika4" value="grafika4-klein" onclick="WinOpen_grafika4(' ')">
+        <br><br><br><br><br><br><br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_klein()"/> 
+    </form>
+</body>
+</html>
